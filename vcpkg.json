@@ -1,0 +1,20 @@
+{
+  "name": "readium",
+  "version": "1.0.0",
+  "dependencies": [ 
+    "poppler",
+    "pkgconf"
+  ],
+  "default-features": ["qt"],
+  "features": {
+    "qt": {
+      "description": "Enable Qt6 support",
+      "dependencies": [
+        {
+          "name": "poppler",
+          "features": ["qt"]
+        }
+      ]
+    }
+  }
+}
