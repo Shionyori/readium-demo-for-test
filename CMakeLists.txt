@@ -26,8 +26,8 @@ pkg_check_modules(poppler-qt6 REQUIRED IMPORTED_TARGET poppler-qt6)
 
 # 源文件
 file(GLOB_RECURSE PROJECT_SOURCES
-    src/*.cpp
-    src/*.h
+    "src/*.cpp"
+    "src/*.h"
 )
 
 # 可执行文件
